@@ -1,0 +1,59 @@
+type TetherToken_AddedBlackList {
+  id: ID!
+  _user: String!
+}
+
+type TetherToken_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type TetherToken_Deprecate {
+  id: ID!
+  newAddress: String!
+}
+
+type TetherToken_DestroyedBlackFunds {
+  id: ID!
+  _blackListedUser: String!
+  _balance: BigInt!
+}
+
+type TetherToken_Issue {
+  id: ID!
+  amount: BigInt!
+}
+
+type TetherToken_Params {
+  id: ID!
+  feeBasisPoints: BigInt!
+  maxFee: BigInt!
+}
+
+type TetherToken_Pause {
+  id: ID!
+}
+
+type TetherToken_Redeem {
+  id: ID!
+  amount: BigInt!
+}
+
+type TetherToken_RemovedBlackList {
+  id: ID!
+  _user: String!
+}
+
+type TetherToken_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
+type TetherToken_Unpause {
+  id: ID!
+}
+
