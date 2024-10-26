@@ -1,0 +1,67 @@
+# General files to ignore
+.DS_Store
+*.log
+*.env
+*.env.local
+
+# Node.js dependencies (frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# pnpm and npm specific files (for frontend with pnpm)
+.pnpm-store/
+package-lock.json
+
+# Next.js specific files
+.next/
+out/                     # The output directory from Next.js static export
+.next/cache/             # Next.js cache folder
+
+# Python dependencies (backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+venv.bak/
+*.env
+*.venv
+
+# FastAPI specific files
+migrations/              # If using migrations folder for database
+alembic/                 # If using Alembic for database migrations
+instance/                # Flask-style instance folders
+
+# Docker-specific files
+docker-compose.override.yml
+*.pid
+*.log
+tmp/
+logs/
+.dockerignore
+Dockerfile
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

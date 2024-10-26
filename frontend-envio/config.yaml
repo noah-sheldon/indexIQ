@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: envio-indexer
+networks:
+- id: 1
+  start_block: 0
+  contracts:
+  - name: CyberFiToken
+    address:
+    - 0x63b4f3e3fa4e438698CE330e365E831F7cCD1eF4
+    handler: src/EventHandlers.ts
+    events:
+    - event: Approval(address indexed owner, address indexed spender, uint256 value)
+    - event: OwnershipTransferred(address indexed previousOwner, address indexed newOwner)
+    - event: Transfer(address indexed from, address indexed to, uint256 value)
+rollback_on_reorg: false
