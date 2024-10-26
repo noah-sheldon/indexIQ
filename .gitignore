@@ -10,6 +10,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+frontend-envio/.npmrc
 
 # pnpm and npm specific files (for frontend with pnpm)
 .pnpm-store/
